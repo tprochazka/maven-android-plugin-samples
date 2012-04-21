@@ -16,8 +16,17 @@
 
 package com.simpligility.android.morseflash;
 
+import android.app.Activity;
+import android.app.Instrumentation;
+import android.content.Intent;
 import android.test.ActivityInstrumentationTestCase;
 import android.test.ActivityInstrumentationTestCase2;
+import android.test.suitebuilder.annotation.LargeTest;
+
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+import static com.github.rtyley.android.screenshot.celebrity.Screenshots.poseForScreenshot;
+import static com.github.rtyley.android.screenshot.celebrity.Screenshots.poseForScreenshotNamed;
+import static java.lang.Thread.sleep;
 
 /**
  * Make sure that the main launcher activity opens up properly, which will be
@@ -33,6 +42,28 @@ public class ConfigureMorseActivityTest extends ActivityInstrumentationTestCase2
      */
     public ConfigureMorseActivityTest() {
         super("com.simpligility.android.morseflash", ConfigureMorseActivity.class);
+    }
+
+    @LargeTest
+    public void testAppearance() throws Exception {
+        startActivitySync(ConfigureMorseActivity.class);
+        Instrumentation instrumentation = getInstrumentation();
+
+        sleep(500); // robotium provides neater ways of waiting for the activity to initialise
+
+        poseForScreenshot();
+        instrumentation.sendStringSync("s");
+        poseForScreenshot();
+        instrumentation.sendStringSync("o");
+        poseForScreenshot();
+        instrumentation.sendStringSync("s");
+        poseForScreenshotNamed("ConfigureMorseActivity-SOS");
+    }
+
+    private <T extends Activity> T startActivitySync(Class<T> clazz) {
+        Intent intent = new Intent(getInstrumentation().getTargetContext(), clazz);
+        intent.setFlags(intent.getFlags() | FLAG_ACTIVITY_NEW_TASK);
+        return (T) getInstrumentation().startActivitySync(intent);
     }
 
 }
