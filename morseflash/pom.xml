@@ -146,7 +146,7 @@
 					here for the local profile -->
 				<!-- this properties are good for all the maven modules -->
 				<server_host>github.com</server_host>
-				<server_path>/drorba/maven-android-plugin-samples</server_path>
+				<server_path>/jayway/maven-android-plugin-samples</server_path>
 			</properties>
 		</profile>
 	</profiles>
