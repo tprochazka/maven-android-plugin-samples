@@ -19,6 +19,9 @@
     <module>native-static-lib</module>
     <module>native-code-including-static-lib</module>
     <module>mixed-java-native-code</module>
+    <module>native-apklib</module>
+    <module>java-with-native-apklib-dependency</module>
+    <module>mixed-java-native-with-apklib-dependency</module>
   </modules>
 
   <build>
@@ -27,7 +30,7 @@
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>3.3.1-SNAPSHOT</version>
+                    <version>3.3.3-SNAPSHOT</version>
                 </plugin>
             </plugins>
         </pluginManagement>
