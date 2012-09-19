@@ -19,4 +19,12 @@ include $(CLEAR_VARS)
 LOCAL_MODULE    := mixed-java-native-with-apklib-dependency
 LOCAL_SRC_FILES := hello-child-jni.c
 
+# Include the shared libraries pulled in via Android Maven plugin makefile (see include below)
+LOCAL_SHARED_LIBRARIES := $(ANDROID_MAVEN_PLUGIN_LOCAL_SHARED_LIBRARIES)
+
+# Build the shared libary
 include $(BUILD_SHARED_LIBRARY)
+
+# Include the Android Maven plugin generated makefile
+# Important: Must be the last import in order for Android Maven Plugins paths to work
+include $(ANDROID_MAVEN_PLUGIN_MAKEFILE)

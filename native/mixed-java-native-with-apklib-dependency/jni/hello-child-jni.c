@@ -16,8 +16,7 @@
  */
 #include <string.h>
 #include <jni.h>
-
-#include "hello-jni.h"
+#include <hello-jni.h>
 
 /* This trivial JNI example is taken directly from the Android samples.
  *
