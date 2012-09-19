@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
     <artifactId>native-apklib</artifactId>
-    <name>Android NDK - Native APKLIB Library Sample</name>
+    <name>Android NDK - Native APKLIB Sample</name>
 
     <!--
     Packaging is defined as 'apklib'
@@ -33,6 +33,9 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <clearNativeArtifacts>true</clearNativeArtifacts> <!-- Why does this need to be set to work? -->
+                </configuration>
             </plugin>
         </plugins>
     </build>
