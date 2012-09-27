@@ -34,7 +34,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <clearNativeArtifacts>true</clearNativeArtifacts> <!-- Why does this need to be set to work? -->
+                    <attachNativeArtifacts>true</attachNativeArtifacts>
                 </configuration>
             </plugin>
         </plugins>
