@@ -167,7 +167,8 @@
 								<debug>false</debug>
 							</sign>
 							<zipalign>
-								<verbose>true</verbose>
+								<skip>false</skip>
+                                                                <verbose>true</verbose>
 								<inputApk>${project.build.directory}/${project.artifactId}.apk</inputApk>
 								<outputApk>${project.build.directory}/${project.artifactId}-signed-aligned.apk
 								</outputApk>
