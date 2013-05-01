@@ -23,7 +23,7 @@
     <name>Android Maven Plugin Samples - Aggregator</name>
 
     <modules>
-        <module>apidemos-android-10</module>
+        <module>apidemos-android-16</module>
         <module>helloflashlight</module>
         <module>morseflash</module>
         <module>scala</module>
