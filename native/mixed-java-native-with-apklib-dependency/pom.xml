@@ -56,7 +56,6 @@
                 <extensions>true</extensions>
                 <configuration>
                     <attachNativeArtifacts>true</attachNativeArtifacts>
-                    <clearNativeArtifacts>true</clearNativeArtifacts> <!-- Why does this need to be set to work? -->
                 </configuration>
             </plugin>
 
