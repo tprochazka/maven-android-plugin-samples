@@ -33,7 +33,7 @@ before_install:
 
   # Build the plugin first, because the samples need the latest version.
   - mkdir target
-  - git clone git://github.com/hugojosefson/maven-android-plugin.git target/maven-android-plugin
+  - git clone git://github.com/jayway/maven-android-plugin.git target/maven-android-plugin
   - mvn install --quiet -DskipTests=true -B -f target/maven-android-plugin/pom.xml
 
 before_script:
