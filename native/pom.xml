@@ -26,6 +26,16 @@
     <module>transient-apklib-with-native</module>
   </modules>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.google.android</groupId>
+        <artifactId>android</artifactId>
+        <version>4.1.1.4</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
   <build>
         <pluginManagement>
             <plugins>
@@ -34,9 +44,9 @@
                     <artifactId>android-maven-plugin</artifactId>
                     <version>3.5.4-SNAPSHOT</version>
                     <configuration>
-                    <sdk> 
-                        <platform>17</platform>
-                    </sdk>
+                        <sdk>
+                            <platform>16</platform>
+                        </sdk>
                     </configuration>
                 </plugin>
             </plugins>
