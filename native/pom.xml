@@ -21,8 +21,7 @@
     <module>mixed-java-native-code</module>
     <module>native-apklib</module>
     <module>java-with-native-apklib-dependency</module>
-    <!-- Disabled for now to be able to release support for sdk 22.0 -->
-    <!-- <module>mixed-java-native-with-apklib-dependency</module>  -->
+    <module>mixed-java-native-with-apklib-dependency</module>
     <module>transient-apklib-with-native</module>
   </modules>
 
