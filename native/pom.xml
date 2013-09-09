@@ -12,6 +12,7 @@
 
   <modules>
     <module>java-with-native-dependency</module>
+    <module>java-with-native-dependency-x86-only</module>
     <module>java-with-native-statically-linked-dependency</module>
     <module>java-with-native-library</module>
     <module>java-transient-dependency</module>

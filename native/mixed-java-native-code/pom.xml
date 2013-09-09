@@ -53,6 +53,9 @@
                             when the native build is complete.  This puts the artifact into the Maven repository
                             -->
                             <attachNativeArtifacts>true</attachNativeArtifacts>
+
+                          <ndkArchitecture>x86 armeabi</ndkArchitecture>
+
                         </configuration>
                     </execution>
                 </executions>
