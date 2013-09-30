@@ -9,6 +9,7 @@
     <name>Library Projects Parent</name>
 
     <modules>
+        <module>androidarchive-lib1</module>
         <module>libraryprojects-lib1</module>
         <module>libraryprojects-lib2</module>
         <module>libraryprojects-mainapp</module>
