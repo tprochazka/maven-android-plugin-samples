@@ -28,6 +28,7 @@
                 <artifactId>android-maven-plugin</artifactId>
                  <extensions>true</extensions>
               <configuration>
+                <ndkArchitecture>x86 armeabi</ndkArchitecture>
               <ndkBuildAdditionalCommandline>V=1 -B</ndkBuildAdditionalCommandline></configuration>
             </plugin>
         </plugins>

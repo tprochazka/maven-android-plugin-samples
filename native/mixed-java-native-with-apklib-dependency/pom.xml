@@ -54,6 +54,7 @@
                 </executions>
                 <extensions>true</extensions>
                 <configuration>
+                    <ndkBuildAdditionalCommandline>V=1</ndkBuildAdditionalCommandline>
                     <attachNativeArtifacts>true</attachNativeArtifacts>
                 </configuration>
             </plugin>

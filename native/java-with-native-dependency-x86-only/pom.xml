@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                               http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
-    <artifactId>java-with-native-statically-linked-dependency</artifactId>
+
+    <artifactId>java-with-native-dependency-x86-only</artifactId>
 
     <packaging>apk</packaging>
-    <name>Android NDK - Java With Native Statically Linked Dependency</name>
+    <name>Android NDK - Java With Native Dependency x86 Only</name>
 
     <parent>
         <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
@@ -24,30 +24,14 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Pull in the dependency on the native library already compiled in the native-code module -->
         <dependency>
             <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
-            <artifactId>native-code-including-static-lib</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <classifier>armeabi</classifier>
-            <type>so</type>
-        </dependency>
-        <dependency>
-            <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
-            <artifactId>native-code-including-static-lib</artifactId>
+            <artifactId>native-code</artifactId>
             <version>1.0.0-SNAPSHOT</version>
             <classifier>x86</classifier>
             <type>so</type>
         </dependency>
 
-        <!-- Pull in the dependency on the native library already compiled in the native-code module -->
-        <dependency>
-            <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
-            <artifactId>native-code-including-static-lib</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-            <classifier>x86</classifier>
-            <type>so</type>
-        </dependency>
 
     </dependencies>
 
