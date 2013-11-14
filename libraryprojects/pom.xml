@@ -14,7 +14,7 @@
         <module>libraryprojects-mainapp</module>
         <module>libraryprojects-tests</module>
         <module>aar-lib1</module>
-        <!-- <module>aar-actionbarsherlock-example</module> -->
+        <module>aar-actionbarsherlock-example</module>
     </modules>
 
     <properties>
