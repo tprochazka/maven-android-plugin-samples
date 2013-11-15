@@ -10,6 +10,7 @@
 
     <modules>
         <module>libraryprojects-lib1</module>
+        <module>aar-from-apklib</module>
         <module>libraryprojects-lib2</module>
         <module>libraryprojects-mainapp</module>
         <module>libraryprojects-tests</module>

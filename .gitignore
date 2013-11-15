@@ -11,3 +11,6 @@ bin
 .DS_Store
 seed.txt
 morseflash/morseflash-app/res/values/filter.xml
+libraryprojects/aar-from-apklib/AndroidManifest.xml
+libraryprojects/aar-from-apklib/res
+libraryprojects/aar-from-apklib/src
