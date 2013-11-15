@@ -5,6 +5,14 @@ env:
     # android-16 is always included
     - ANDROID_SDKS=sysimg-16            ANDROID_TARGET=android-16  ANDROID_ABI=x86
 before_install:
+
+  # Maven 3.1.1
+  - wget http://www.us.apache.org/dist/maven/maven-3/3.1.1/binaries/apache-maven-3.1.1-bin.tar.gz
+  - tar xvf apache-maven-3.1.1-bin.tar.gz > /dev/null
+  - export MVN_HOME=`pwd`/apache-maven-3.1.1
+  - export PATH=${MVN_HOME}/bin/:${PATH}
+  - mvn --version
+  
   # Install base Android SDK
   - sudo apt-get update -qq
   - if [ `uname -m` = x86_64 ]; then sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch > /dev/null; fi
