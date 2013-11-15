@@ -10,7 +10,7 @@
   <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
   <artifactId>aar-from-apklib</artifactId>
   <packaging>aar</packaging>
-  <name>Library Projects - AAR from Apklib</name>
+  <name>Android Archive Projects - AAR from Apklib</name>
   <description>Project that produces an aar from an apklib declared as a dependency</description>
 
   <dependencies>
