@@ -16,6 +16,7 @@
         <module>libraryprojects-tests</module>
         <module>aar-lib1</module>
         <module>aar-actionbarsherlock-example</module>
+        <!-- <module>aar-from-apklib</module>  -->
     </modules>
 
     <properties>
@@ -49,7 +50,6 @@
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
                     <version>3.8.1-SNAPSHOT</version>
-
                     <configuration>
                         <sdk>
                             <platform>16</platform>
