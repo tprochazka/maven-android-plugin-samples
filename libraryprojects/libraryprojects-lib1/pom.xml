@@ -11,7 +11,6 @@
     <artifactId>libraryprojects-lib1</artifactId>
     <packaging>apklib</packaging>
     <name>Library Projects - Library 1</name>
-
     <dependencies>
         <dependency>
             <groupId>com.google.android</groupId>
