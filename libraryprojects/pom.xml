@@ -9,11 +9,10 @@
     <name>Library Projects Parent</name>
 
     <modules>
-        <module>libraryprojects-lib1</module>
+        <module>aar-lib1</module>
         <module>libraryprojects-lib2</module>
         <module>libraryprojects-mainapp</module>
         <module>libraryprojects-tests</module>
-        <module>aar-lib1</module>
         <module>aar-actionbarsherlock-example</module>
         <!-- <module>aar-from-apklib</module>  -->
     </modules>
