@@ -1,10 +1,9 @@
 package com.jayway.maven.plugins.android.generation2.samples.libraryprojects.mainapp;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
-import com.jayway.maven.plugins.android.generation2.samples.androidarchive.lib1.AbstractActivityUsingResources;
-import com.jayway.maven.plugins.android.generation2.samples.androidarchive.lib1.Lib1Class;
+import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1.AbstractActivityUsingResources;
+import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1.Lib1Class;
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib2.Lib2Class;
 import org.apache.commons.io.IOUtils;
 
@@ -28,7 +27,7 @@ public class MainActivity extends AbstractActivityUsingResources
         final TextView lib1asset = (TextView) findViewById(R.id.lib1asset);
         final TextView lib2asset = (TextView) findViewById(R.id.lib2asset);
         try {
-            final InputStream inputStream = getAssets().open("lib1asset.txt");
+            final InputStream inputStream = getAssets().open("aar1asset.txt");
             lib1asset.setText(IOUtils.toString(inputStream));
         } catch (IOException e) {
             e.printStackTrace();

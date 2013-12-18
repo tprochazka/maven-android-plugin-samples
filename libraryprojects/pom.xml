@@ -10,6 +10,7 @@
 
     <modules>
         <module>aar-lib1</module>
+        <module>libraryprojects-lib1</module>
         <module>libraryprojects-lib2</module>
         <module>libraryprojects-mainapp</module>
         <module>libraryprojects-tests</module>
