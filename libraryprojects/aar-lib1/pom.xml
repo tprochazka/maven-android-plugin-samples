@@ -10,7 +10,7 @@
     <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
     <artifactId>aar-lib1</artifactId>
     <packaging>aar</packaging>
-    <name>Android Archive  AR Creation - Library 1</name>
+    <name>Library Projects - AAR Library 1</name>
 
     <dependencies>
         <dependency>

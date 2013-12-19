@@ -12,12 +12,22 @@
 <TextView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+    android:text="@string/aar1resource"
+    />
+<TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     android:text="@string/lib1resource"
     />
 <TextView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="@string/lib2resource"
+    />
+<TextView
+    android:id="@+id/aar1asset"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     />
 <TextView
     android:id="@+id/lib1asset"
