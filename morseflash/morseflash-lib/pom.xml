@@ -8,7 +8,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.simpligility.android.morse</groupId>
-    <artifactId>morse-library</artifactId>
+    <artifactId>morseflash-library</artifactId>
     <name>MorseFlash - Library</name>
     <description>A tiny library for morse based messaging.</description>
 

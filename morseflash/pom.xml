@@ -109,7 +109,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<modules>
-				<module>morse-lib</module>
+				<module>morseflash-lib</module>
 				<module>morseflash-app</module>
 				<module>morseflash-instrumentation</module>
 			</modules>

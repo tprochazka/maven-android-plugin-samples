@@ -19,7 +19,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>com.simpligility.android.morse</groupId>
-			<artifactId>morse-library</artifactId>
+			<artifactId>morseflash-library</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
