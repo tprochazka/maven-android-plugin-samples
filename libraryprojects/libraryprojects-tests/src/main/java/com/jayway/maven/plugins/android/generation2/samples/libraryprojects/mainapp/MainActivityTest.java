@@ -32,38 +32,29 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         assertTrue(robotium.searchText("Hello World, MainActivity"));
     }
 
-    public void testLib1ResourceAppears() {
+    public void testResourcesAppear() {
+        assertTrue(robotium.searchText("This is from a resource in aar-lib1."));
         assertTrue(robotium.searchText("This is from a resource in libraryprojects-lib1."));
-    }
-
-    public void testLib2ResourceAppears() {
         assertTrue(robotium.searchText("This is from a resource in libraryprojects-lib2."));
     }
 
-    public void testLib1AssetAppears() {
+    public void testAssetsAppear() {
+        assertTrue(robotium.searchText("This is from an asset in aar-lib1."));
         assertTrue(robotium.searchText("This is from an asset in libraryprojects-lib1."));
-    }
-
-    public void testLib2AssetAppears() {
         assertTrue(robotium.searchText("This is from an asset in libraryprojects-lib2."));
     }
 
-    public void testLib1ClassAppears() {
+    public void testClassesAppear() {
+        assertTrue(robotium.searchText("This is from a class in aar-lib1."));
         assertTrue(robotium.searchText("This is from a class in libraryprojects-lib1."));
-    }
-
-    public void testLib2ClassAppears() {
         assertTrue(robotium.searchText("This is from a class in libraryprojects-lib2."));
     }
 
-    public void testLib1JavaResourceAppears() {
+    public void testJavaResourcesAppear() {
+        assertTrue(robotium.searchText("This is from a java resource in aar-lib1."));
         assertTrue(robotium.searchText("This is from a java resource in libraryprojects-lib1."));
-    }
-
-    public void testLib2JavaResourceAppears() {
         assertTrue(robotium.searchText("This is from a java resource in libraryprojects-lib2."));
     }
-
 
     /**
      * Finalizes the Robotium Solo instance, as recommended by Robotium's Getting Started guide.

@@ -3,7 +3,8 @@ package com.jayway.maven.plugins.android.generation2.samples.libraryprojects.mai
 import android.os.Bundle;
 import android.widget.TextView;
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1.AbstractActivityUsingResources;
-import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1.Lib1Class;
+import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1.Aar1Class;
+import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib1.Lib1Class;
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib2.Lib2Class;
 import org.apache.commons.io.IOUtils;
 
@@ -19,41 +20,42 @@ public class MainActivity extends AbstractActivityUsingResources
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        final TextView lib1javaclass = (TextView) findViewById(R.id.lib1javaclass);
-        final TextView lib2javaclass = (TextView) findViewById(R.id.lib2javaclass);
-        lib1javaclass.setText(Lib1Class.getString());
-        lib2javaclass.setText(Lib2Class.getString());
+        setTextFromClass(R.id.aar1javaclass, Aar1Class.getString());
+        setTextFromClass(R.id.lib1javaclass, Lib1Class.getString());
+        setTextFromClass(R.id.lib2javaclass, Lib2Class.getString());
 
-        final TextView lib1asset = (TextView) findViewById(R.id.lib1asset);
-        final TextView lib2asset = (TextView) findViewById(R.id.lib2asset);
-        try {
-            final InputStream inputStream = getAssets().open("aar1asset.txt");
-            lib1asset.setText(IOUtils.toString(inputStream));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            final InputStream inputStream = getAssets().open("lib2asset.txt");
-            lib2asset.setText(IOUtils.toString(inputStream));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        final TextView lib1javaresource = (TextView) findViewById(R.id.lib1javaresource);
-        final TextView lib2javaresource = (TextView) findViewById(R.id.lib2javaresource);
-        try {
-            final InputStream inputStream = this.getClass().getResourceAsStream("/lib1javaresource.txt");
-            lib1javaresource.setText(IOUtils.toString(inputStream));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        try {
-            final InputStream inputStream = this.getClass().getResourceAsStream("/lib2javaresource.txt");
-            lib2javaresource.setText(IOUtils.toString(inputStream));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-
+        setTextFromAsset(R.id.aar1asset, "aar1asset.txt");
+        setTextFromAsset(R.id.lib1asset, "lib1asset.txt");
+        setTextFromAsset(R.id.lib2asset, "lib2asset.txt");
+        
+        setTextFromResource(R.id.aar1javaresource, "/aar1javaresource.txt");
+        setTextFromResource(R.id.lib1javaresource, "/lib1javaresource.txt");
+        setTextFromResource(R.id.lib2javaresource, "/lib2javaresource.txt");
     }
+    
+    private void setTextFromClass(int id, String text) {
+        final TextView view = (TextView) findViewById(id);
+        view.setText(text);
+    }
+    
+    private void setTextFromAsset(int id, String assetfilename) {
+        final TextView view = (TextView) findViewById(id);
+        try {
+            final InputStream inputStream = getAssets().open(assetfilename);
+            view.setText(IOUtils.toString(inputStream));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    private void setTextFromResource(int id, String resourcePath) {
+      final TextView view = (TextView) findViewById(id);
+      try {
+          final InputStream inputStream = this.getClass().getResourceAsStream(resourcePath);
+          view.setText(IOUtils.toString(inputStream));
+      } catch (IOException e) {
+          e.printStackTrace();
+      }
+    }
+
 }

@@ -40,12 +40,22 @@
     android:layout_height="wrap_content"
     />
 <TextView
+    android:id="@+id/aar1javaclass"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+<TextView
     android:id="@+id/lib1javaclass"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />
 <TextView
     android:id="@+id/lib2javaclass"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+<TextView
+    android:id="@+id/aar1javaresource"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />

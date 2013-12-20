@@ -3,7 +3,7 @@
       package="com.simpligility.android.aar"
       android:versionCode="1"
       android:versionName="1.0"
-      android:theme="@style/Theme.Sherlock.Light.DarkActionBar">
+      android:theme="@style/Theme.Sherlock">
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".AarActivity"
                   android:label="@string/app_name">
