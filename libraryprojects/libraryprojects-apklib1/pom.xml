@@ -8,10 +8,9 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
-    <artifactId>apklib-lib2</artifactId>
+    <artifactId>libraryprojects-apklib1</artifactId>
     <packaging>apklib</packaging>
-    <name>Library Projects - APKLIB Library 2</name>
-
+    <name>Library Projects - APKLIB 1</name>
     <dependencies>
         <dependency>
             <groupId>com.google.android</groupId>
@@ -24,13 +23,6 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.0.1</version>
-        </dependency>
-
     </dependencies>
 
     <build>

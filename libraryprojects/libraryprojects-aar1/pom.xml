@@ -8,9 +8,10 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
-    <artifactId>apklib-lib1</artifactId>
-    <packaging>apklib</packaging>
-    <name>Library Projects - APKLIB Library 1</name>
+    <artifactId>libraryprojects-aar1</artifactId>
+    <packaging>aar</packaging>
+    <name>Library Projects - AAR 1</name>
+
     <dependencies>
         <dependency>
             <groupId>com.google.android</groupId>
