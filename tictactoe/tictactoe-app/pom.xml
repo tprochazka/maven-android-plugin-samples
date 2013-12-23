@@ -44,7 +44,8 @@
 				<artifactId>android-maven-plugin</artifactId>
 				<extensions>true</extensions>
 				<configuration>
-                    <extractDuplicates>true</extractDuplicates>
+                    <!--<extractDuplicates>true</extractDuplicates>-->
+					<mergeManifests>true</mergeManifests>
 					<manifest>
 						<debuggable>true</debuggable>
 					</manifest>
