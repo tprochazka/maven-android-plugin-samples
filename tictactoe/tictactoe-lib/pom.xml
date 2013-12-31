@@ -7,9 +7,11 @@
         <artifactId>tictactoe-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
+
     <groupId>com.simpligility.android.tictactoe</groupId>
     <artifactId>tictactoe-library</artifactId>
     <packaging>aar</packaging>
+
     <name>tictactoe - Library</name>
     <description>A tiny library for tictactoe.</description>
 
@@ -43,4 +45,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

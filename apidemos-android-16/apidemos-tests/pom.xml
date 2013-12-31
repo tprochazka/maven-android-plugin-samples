@@ -16,13 +16,16 @@
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>com.jayway.maven.plugins.android.generation2.samples.apidemos-android-16</groupId>
         <artifactId>apidemos-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
+
     <artifactId>apidemos-tests</artifactId>
     <packaging>apk</packaging>
+
     <name>Android SDK ApiDemos - Instrumentation Test</name>
 
     <dependencies>
@@ -55,6 +58,35 @@
             <type>jar</type>
         </dependency>
     </dependencies>
+
+    <build>
+        <!--<finalName>${project.artifactId}</finalName>-->
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <configuration>
+                    <test>
+                        <!--<skip>true|false|auto</skip>-->
+                        <!--<instrumentationPackage>packageName</instrumentationPackage>-->
+                        <!--<instrumentationRunner>className</instrumentationRunner>-->
+                        <!--<debug>true|false</debug>-->
+                        <!--<coverage>true|false</coverage>-->
+                        <!--<logonly>true|false</logonly>  avd-->
+                        <!--<testsize>small|medium|large</testsize>-->
+                        <testSize>small</testSize>
+                        <createReport>true</createReport>
+                        <!--<classes>-->
+                            <!--<class>your.package.name.YourTestClass</class>-->
+                        <!--</classes>-->
+                        <!--<packages>-->
+                            <!--<package>your.package.name</package>-->
+                        <!--</packages>-->
+                    </test>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <profiles>
         <profile>
@@ -136,34 +168,4 @@
             </reporting>
         </profile>
     </profiles>
-
-    <build>
-        <!--<finalName>${project.artifactId}</finalName>-->
-        <plugins>
-            <plugin>
-                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                <artifactId>android-maven-plugin</artifactId>
-                <configuration>
-                    <test>
-                        <!--<skip>true|false|auto</skip>-->
-                        <!--<instrumentationPackage>packageName</instrumentationPackage>-->
-                        <!--<instrumentationRunner>className</instrumentationRunner>-->
-                        <!--<debug>true|false</debug>-->
-                        <!--<coverage>true|false</coverage>-->
-                        <!--<logonly>true|false</logonly>  avd-->
-                        <!--<testsize>small|medium|large</testsize>-->
-                        <testSize>small</testSize>
-                        <createReport>true</createReport>
-                        <!--<classes>-->
-                            <!--<class>your.package.name.YourTestClass</class>-->
-                        <!--</classes>-->
-                        <!--<packages>-->
-                            <!--<package>your.package.name</package>-->
-                        <!--</packages>-->
-                    </test>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
 </project>
