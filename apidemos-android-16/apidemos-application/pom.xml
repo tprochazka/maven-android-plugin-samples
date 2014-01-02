@@ -15,62 +15,62 @@
   limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.jayway.maven.plugins.android.generation2.samples.apidemos-android-16</groupId>
-        <artifactId>apidemos-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-    </parent>
+  <parent>
+    <groupId>com.jayway.maven.plugins.android.generation2.samples.apidemos-android-16</groupId>
+    <artifactId>apidemos-parent</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
 
-    <artifactId>apidemos-application</artifactId>
-    <packaging>apk</packaging>
+  <artifactId>apidemos-application</artifactId>
+  <packaging>apk</packaging>
 
-    <name>Android SDK ApiDemos - Application</name>
+  <name>Android SDK ApiDemos - Application</name>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.google.android</groupId>
-            <artifactId>android</artifactId>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>com.google.android</groupId>
+      <artifactId>android</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
 
-    <build>
-        <finalName>${project.artifactId}</finalName>
+  <build>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+      <plugin>
+        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+        <artifactId>android-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>emma</id>
+      <build>
         <plugins>
-            <plugin>
-                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                <artifactId>android-maven-plugin</artifactId>
-             </plugin>
-        </plugins>
-    </build>
-
-    <profiles>
-        <profile>
-            <id>emma</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                        <artifactId>android-maven-plugin</artifactId>
-                        <configuration>
+          <plugin>
+            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+            <artifactId>android-maven-plugin</artifactId>
+            <configuration>
                             <!-- emma start -->
-                            <emma>
-                                <enable>true</enable>
-                                <classFolders>${project.basedir}/target/classes/</classFolders>
-                                <outputMetaFile>${project.basedir}/target/emma/coverage.em</outputMetaFile>
-                            </emma>
+              <emma>
+                <enable>true</enable>
+                <classFolders>${project.basedir}/target/classes/</classFolders>
+                <outputMetaFile>${project.basedir}/target/emma/coverage.em</outputMetaFile>
+              </emma>
                             <!-- emma stop -->
-                            <dex>
-                                <noLocals>true</noLocals>
+              <dex>
+                <noLocals>true</noLocals>
                                 <!--  must be set for emma -->
-                            </dex>
-                        </configuration>
-                        <extensions>true</extensions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+              </dex>
+            </configuration>
+            <extensions>true</extensions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>

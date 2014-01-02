@@ -15,140 +15,140 @@
   limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>com.simpligility.maven</groupId>
-        <artifactId>progressive-organization-pom</artifactId>
-        <version>1.0.0</version>
-    </parent>
+  <parent>
+    <groupId>com.simpligility.maven</groupId>
+    <artifactId>progressive-organization-pom</artifactId>
+    <version>1.0.0</version>
+  </parent>
 
-    <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
-    <artifactId>maven-android-plugin-samples</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+  <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
+  <artifactId>maven-android-plugin-samples</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
-    <name>Android Maven Plugin Samples - Aggregator</name>
-    <url>http://code.google.com/p/maven-android-plugin</url>
-    <inceptionYear>2009</inceptionYear>
-    <licenses>
-        <license>
-            <name>Apache 2.0</name>
-            <url>LICENSE.txt</url>
-        </license>
-    </licenses>
+  <name>Android Maven Plugin Samples - Aggregator</name>
+  <url>http://code.google.com/p/maven-android-plugin</url>
+  <inceptionYear>2009</inceptionYear>
+  <licenses>
+    <license>
+      <name>Apache 2.0</name>
+      <url>LICENSE.txt</url>
+    </license>
+  </licenses>
 
-    <developers>
-        <developer>
-            <name>See homepage and mailinglist for contributors.</name>
-            <id>maven-android-plugin-project</id>
-            <url>http://code.google.com/p/maven-android-plugin</url>
-            <roles>
-                <role>Developer</role>
-                <role>Contributor</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Manfred Moser</name>
-            <email>manfred@simpligility.com</email>
-            <url>http://www.simpligility.com/</url>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-    </developers>
+  <developers>
+    <developer>
+      <name>See homepage and mailinglist for contributors.</name>
+      <id>maven-android-plugin-project</id>
+      <url>http://code.google.com/p/maven-android-plugin</url>
+      <roles>
+        <role>Developer</role>
+        <role>Contributor</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Manfred Moser</name>
+      <email>manfred@simpligility.com</email>
+      <url>http://www.simpligility.com/</url>
+      <roles>
+        <role>Developer</role>
+      </roles>
+    </developer>
+  </developers>
 
-    <mailingLists>
-        <mailingList>
-            <name>Maven Android Developers</name>
-            <archive>http://groups.google.com/group/maven-android-developers/topics</archive>
-        </mailingList>
-    </mailingLists>
+  <mailingLists>
+    <mailingList>
+      <name>Maven Android Developers</name>
+      <archive>http://groups.google.com/group/maven-android-developers/topics</archive>
+    </mailingList>
+  </mailingLists>
 
-    <modules>
-        <module>apidemos-android-16</module>
-        <module>helloflashlight</module>
-        <module>morseflash</module>
-        <module>scala</module>
-        <module>libraryprojects</module>
-        <module>native</module>
-        <module>support4demos</module>
-        <module>tictactoe</module>
-    </modules>
+  <modules>
+    <module>apidemos-android-16</module>
+    <module>helloflashlight</module>
+    <module>morseflash</module>
+    <module>scala</module>
+    <module>libraryprojects</module>
+    <module>native</module>
+    <module>support4demos</module>
+    <module>tictactoe</module>
+  </modules>
 
-    <scm>
-        <url>http://github.com/jayway/maven-android-plugin-samples/tree/${scm.branch}</url>
-        <connection>scm:git:git://github.com/jayway/maven-android-plugin-samples.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/jayway/maven-android-plugin-samples.git</developerConnection>
-    </scm>
-    <issueManagement>
-        <system>Google Code Issue Tracking</system>
-        <url>http://code.google.com/p/maven-android-plugin/issues/list</url>
-    </issueManagement>
+  <scm>
+    <url>http://github.com/jayway/maven-android-plugin-samples/tree/${scm.branch}</url>
+    <connection>scm:git:git://github.com/jayway/maven-android-plugin-samples.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/jayway/maven-android-plugin-samples.git</developerConnection>
+  </scm>
+  <issueManagement>
+    <system>Google Code Issue Tracking</system>
+    <url>http://code.google.com/p/maven-android-plugin/issues/list</url>
+  </issueManagement>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <scm.branch>master</scm.branch>
-        <maven.version>3.1.1</maven.version>
-    </properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <scm.branch>master</scm.branch>
+    <maven.version>3.1.1</maven.version>
+  </properties>
 
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-                    <artifactId>android-maven-plugin</artifactId>
-                    <version>3.8.2-SNAPSHOT</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-        <plugins>
-            <plugin>
-                <artifactId>maven-scm-plugin</artifactId>
-                <configuration>
-                    <scmVersionType>branch</scmVersionType>
-                    <scmVersion>${scm.branch}</scmVersion>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <autoVersionSubmodules>true</autoVersionSubmodules>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifestEntries>
-                            <Build-Source-Version>1.5</Build-Source-Version>
-                            <Build-Target-Version>1.5</Build-Target-Version>
-                        </manifestEntries>
-                    </archive>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-enforcer-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>enforce-maven</id>
-                        <goals>
-                            <goal>enforce</goal>
-                        </goals>
-                        <phase>initialize</phase>
-                        <configuration>
-                            <rules>
-                                <requireMavenVersion>
-                                    <version>[${maven.version},)</version>
-                                    <message>Check for Maven version &gt;=${maven.version} failed. Update your Maven install.</message>
-                                </requireMavenVersion>
-                            </rules>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+          <artifactId>android-maven-plugin</artifactId>
+          <version>3.8.2-SNAPSHOT</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <artifactId>maven-scm-plugin</artifactId>
+        <configuration>
+          <scmVersionType>branch</scmVersionType>
+          <scmVersion>${scm.branch}</scmVersion>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Build-Source-Version>1.5</Build-Source-Version>
+              <Build-Target-Version>1.5</Build-Target-Version>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-maven</id>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <phase>initialize</phase>
+            <configuration>
+              <rules>
+                <requireMavenVersion>
+                  <version>[${maven.version},)</version>
+                  <message>Check for Maven version &gt;=${maven.version} failed. Update your Maven install.</message>
+                </requireMavenVersion>
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
