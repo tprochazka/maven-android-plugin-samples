@@ -27,7 +27,12 @@ pushed to the Central Repository.
 There are also branches for specific versions of the Android Maven
 Plugin with the branch naming equal to the version of the plugin.
 
-Downloading of a zip file of a specific branch can be done via
+You can just download the project as usual from github with 
+----
+git clone https://github.com/jayway/maven-android-plugin-samples.git
+----
+
+Alternatively downloading of a zip file of a specific branch can be done via
 specific URL e.g.
 
 * https://github.com/jayway/maven-android-plugin-samples/zipball/master[master]
@@ -40,13 +45,24 @@ There are a number of sub modules in this project. Here is the
 description for the top level ones. Details about each one is in the
 folder for the individual project. 
 
-helloflashlight:: simple app
+apidemos-android-16:: the Android SDK API demo application suite for
+Android 16
 
-morseflash:: simple app with java libary and instrumentation tests
+helloflashlight:: a simple example application
 
-scala:: scala app
+libraryprojects:: a number of libraries in aar and apklib format being
+created and used in application examples
 
-native:: a bunch of apps and libraries using the NDK
+morseflash:: a simple example application with some external Java code
+from a library being used and an instrumentation test project
 
-library projects:: aar and apklib projects and usage
+native:: a number of example libraries and applications using the
+Android NDK
+
+scala:: an example application written in Scala
+
+support4demos:: example applications using the support library
+
+tictactoe:: an example application from the gradle samples project
+from the Android SDK team converted to a Maven based build
 
