@@ -5,6 +5,8 @@
 This project includes a whole number of example projects that use the
 Android Maven Plugin available at
 http://code.google.com/p/maven-android-plugin[http://code.google.com/p/maven-android-plugin].
+and
+https://github.com/jayway/maven-android-plugin[https://github.com/jayway/maven-android-plugin].
 
 It serves as samples for users as well as a test cases for the ongoing
 development of the plugin.
