@@ -1,0 +1,52 @@
+== Android Maven Plugin - Sample Project
+
+=== Introduction
+
+This project includes a whole number of example projects that use the
+Android Maven Plugin available at
+http://code.google.com/p/maven-android-plugin[http://code.google.com/p/maven-android-plugin].
+
+It serves as samples for users as well as a test cases for the ongoing
+development of the plugin.
+
+Documentation can be found there as well as in README files in the folders
+of the different examples.
+
+To run all projects you will need the support library and other libraries from the
+SDK deployed to your Maven repository. Use the https://github.com/mosabua/maven-android-sdk-deployer[Maven Android SDK Deployer] to do that.
+
+=== Versioning and Downloads
+
+The 'master' branch of this project always uses the latest development
+version of the Android Maven Plugin and as such is always
++x.y.z-SNAPSHOT+.
+
+The 'stable' branch uses the latest relase of the plugin that has been
+pushed to the Central Repository.
+
+There are also branches for specific versions of the Android Maven
+Plugin with the branch naming equal to the version of the plugin.
+
+Downloading of a zip file of a specific branch can be done via
+specific URL e.g.
+
+* https://github.com/jayway/maven-android-plugin-samples/zipball/master[master]
+* https://github.com/jayway/maven-android-plugin-samples/zipball/stable[stable]
+* https://github.com/jayway/maven-android-plugin-samples/zipball/3.8.2[3.8.2]
+
+=== List of Projects/Modules
+
+There are a number of sub modules in this project. Here is the
+description for the top level ones. Details about each one is in the
+folder for the individual project. 
+
+helloflashlight:: simple app
+
+morseflash:: simple app with java libary and instrumentation tests
+
+scala:: scala app
+
+native:: a bunch of apps and libraries using the NDK
+
+library projects:: aar and apklib projects and usage
+
