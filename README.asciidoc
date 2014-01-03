@@ -1,4 +1,4 @@
-== Android Maven Plugin - Sample Project
+== Android Maven Plugin - Sample Projects
 
 === Introduction
 
