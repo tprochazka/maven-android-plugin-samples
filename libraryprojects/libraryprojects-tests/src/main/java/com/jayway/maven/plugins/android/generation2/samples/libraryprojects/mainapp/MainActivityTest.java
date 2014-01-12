@@ -1,7 +1,7 @@
 package com.jayway.maven.plugins.android.generation2.samples.libraryprojects.mainapp;
 
 import android.test.ActivityInstrumentationTestCase2;
-import com.jayway.android.robotium.solo.Solo;
+import com.robotium.solo.Solo;
 
 /**
  * Tests that {@link MainActivity} displays correct data from its libraries.
