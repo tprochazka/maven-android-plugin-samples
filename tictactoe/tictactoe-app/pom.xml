@@ -12,7 +12,7 @@
 	<artifactId>tictactoe-app</artifactId>
 	<packaging>apk</packaging>
 
-	<name>tictactoe - App</name>
+	<name>TicTacToe - App</name>
 
 	<properties>
 		<environment>development</environment>

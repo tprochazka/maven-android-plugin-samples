@@ -12,8 +12,8 @@
     <artifactId>tictactoe-library</artifactId>
     <packaging>aar</packaging>
 
-    <name>tictactoe - Library</name>
-    <description>A tiny library for tictactoe.</description>
+    <name>TicTacToe - Library</name>
+    <description>A tiny library for TicTacToe.</description>
 
     <dependencies>
         <dependency>

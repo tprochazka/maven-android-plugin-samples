@@ -8,7 +8,7 @@
     <version>1.0.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>java-transient-dependency</artifactId>
+  <artifactId>native-java-transient-dependency</artifactId>
   <packaging>apk</packaging>
 
   <name>Android NDK - Java Transient Dependency</name>
