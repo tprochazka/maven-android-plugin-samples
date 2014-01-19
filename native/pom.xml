@@ -3,11 +3,20 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                               http://maven.apache.org/maven-v4_0_0.xsd">
+
   <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
+    <artifactId>maven-android-plugin-samples</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
   <groupId>com.jayway.maven.plugins.android.generation2.samples</groupId>
   <artifactId>native-parent</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
+
   <name>Android NDK - Aggregator</name>
 
   <modules>
@@ -22,7 +31,7 @@
     <module>mixed-java-native-code</module>
     <module>native-apklib</module>
     <module>java-with-native-apklib-dependency</module>
-    <module>mixed-java-native-with-apklib-dependency</module>
+    <!--module>mixed-java-native-with-apklib-dependency</module-->
     <module>transient-apklib-with-native</module>
   </modules>
 
@@ -42,7 +51,6 @@
                 <plugin>
                     <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                     <artifactId>android-maven-plugin</artifactId>
-                    <version>3.8.2-SNAPSHOT</version>
 
                     <configuration>
                         <sdk>
