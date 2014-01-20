@@ -7,7 +7,7 @@
 <TextView  
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content"
-    android:text="Hello World, MainActivity"
+    android:text="@string/apkResource"
     />
 <TextView
     android:layout_width="fill_parent"
@@ -22,52 +22,72 @@
 <TextView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:text="@string/lib2resource"
+    android:text="@string/aarFromAarResource"
     />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/apklibFromApklibResource"
+        />
 <TextView
-    android:id="@+id/aar1asset"
+    android:id="@+id/aar1Asset"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />
 <TextView
-    android:id="@+id/lib1asset"
+    android:id="@+id/lib1Asset"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />
 <TextView
-    android:id="@+id/lib2asset"
+    android:id="@+id/aarFromAarAsset"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+    <TextView
+        android:id="@+id/apklibFromApklibAsset"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+<TextView
+    android:id="@+id/aar1Javaclass"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />
 <TextView
-    android:id="@+id/aar1javaclass"
+    android:id="@+id/lib1Javaclass"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />
 <TextView
-    android:id="@+id/lib1javaclass"
+    android:id="@+id/aarFromAarJavaclass"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    />
+    <TextView
+        android:id="@+id/apklibFromApklibJavaclass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+<TextView
+    android:id="@+id/aar1JavaResource"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />
 <TextView
-    android:id="@+id/lib2javaclass"
+    android:id="@+id/lib1JavaResource"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />
 <TextView
-    android:id="@+id/aar1javaresource"
+    android:id="@+id/aarFromAarJavaResource"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     />
-<TextView
-    android:id="@+id/lib1javaresource"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    />
-<TextView
-    android:id="@+id/lib2javaresource"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    />
+    <TextView
+        android:id="@+id/apklibFromApklibJavaResource"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
 </LinearLayout>
 
