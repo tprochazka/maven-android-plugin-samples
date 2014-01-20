@@ -21,16 +21,19 @@ public class MainActivity extends AbstractActivityUsingResources {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        setTextFromClass(R.id.aar1Javaclass, Aar1Class.getString());
-        setTextFromClass(R.id.lib1Javaclass, Lib1Class.getString());
-        setTextFromClass(R.id.aarFromAarJavaclass, AarFromAarClass.getString());
-        setTextFromClass(R.id.apklibFromApklibJavaclass, ApklibFromApklibClass.getString());
-
+        setTextFromAsset(R.id.apkAsset, "apkAsset.txt");
         setTextFromAsset(R.id.aar1Asset, "aar1Asset.txt");
         setTextFromAsset(R.id.lib1Asset, "lib1Asset.txt");
         setTextFromAsset(R.id.aarFromAarAsset, "aarFromAarAsset.txt");
         setTextFromAsset(R.id.apklibFromApklibAsset, "apklibFromApklibAsset.txt");
 
+        setTextFromClass(R.id.apkJavaclass, ApkClass.getString());
+        setTextFromClass(R.id.aar1Javaclass, Aar1Class.getString());
+        setTextFromClass(R.id.lib1Javaclass, Lib1Class.getString());
+        setTextFromClass(R.id.aarFromAarJavaclass, AarFromAarClass.getString());
+        setTextFromClass(R.id.apklibFromApklibJavaclass, ApklibFromApklibClass.getString());
+
+        setTextFromResource(R.id.apkJavaResource, "/apkJavaResource.txt");
         setTextFromResource(R.id.aar1JavaResource, "/aar1JavaResource.txt");
         setTextFromResource(R.id.lib1JavaResource, "/lib1JavaResource.txt");
         setTextFromResource(R.id.aarFromAarJavaResource, "/aarFromAarJavaResource.txt");
