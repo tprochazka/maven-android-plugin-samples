@@ -5,7 +5,7 @@ import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib1
 /**
  * Extends lib1Class from apklib1 to prove that we have compiled using apklib1 as a dependency.
  */
-public class AarFromApklibClass extends Lib1Class {
+public class ApklibFromApklibClass extends Lib1Class {
 
     public String getString2() {
         return "String2";

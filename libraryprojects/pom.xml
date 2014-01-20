@@ -21,7 +21,7 @@
     <module>libraryprojects-aar1</module>
     <module>libraryprojects-apklib1</module>
     <module>libraryprojects-apklib2</module>
-    <module>libraryprojects-aar-from-apklib</module>
+    <module>libraryprojects-apklib-from-apklib</module>
     <module>libraryprojects-aar-from-aar</module>
     <module>libraryprojects-mainapp</module>
     <!--module>libraryprojects-tests</module-->

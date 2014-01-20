@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">Aar from Apklib Activity</string>
-    <string name="aarFromApklibResource">This is from a resource in aar-from-apklib.</string>
-</resources>
