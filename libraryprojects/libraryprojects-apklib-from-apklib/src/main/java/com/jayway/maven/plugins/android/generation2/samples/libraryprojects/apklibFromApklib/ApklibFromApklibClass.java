@@ -1,4 +1,4 @@
-package com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aarFromApklib;
+package com.jayway.maven.plugins.android.generation2.samples.libraryprojects.apklibFromApklib;
 
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib1.Lib1Class;
 

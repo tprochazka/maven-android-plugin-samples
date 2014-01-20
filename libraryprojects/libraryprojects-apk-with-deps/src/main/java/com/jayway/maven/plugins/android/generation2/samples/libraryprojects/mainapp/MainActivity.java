@@ -4,8 +4,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1.AbstractActivityUsingResources;
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1.Aar1Class;
+import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.apklibFromApklib.ApklibFromApklibClass;
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib1.Lib1Class;
-import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib2.Lib2Class;
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class MainActivity extends AbstractActivityUsingResources
 
         setTextFromClass(R.id.aar1javaclass, Aar1Class.getString());
         setTextFromClass(R.id.lib1javaclass, Lib1Class.getString());
-        setTextFromClass(R.id.lib2javaclass, Lib2Class.getString());
+        setTextFromClass(R.id.lib2javaclass, ApklibFromApklibClass.getString());
 
         setTextFromAsset(R.id.aar1asset, "aar1asset.txt");
         setTextFromAsset(R.id.lib1asset, "lib1asset.txt");
