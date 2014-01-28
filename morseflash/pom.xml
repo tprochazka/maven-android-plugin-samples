@@ -64,7 +64,6 @@
             <zipalign>
               <verbose>true</verbose>
             </zipalign>
-            <undeployBeforeDeploy>true</undeployBeforeDeploy>
           </configuration>
         </plugin>
         <plugin>
