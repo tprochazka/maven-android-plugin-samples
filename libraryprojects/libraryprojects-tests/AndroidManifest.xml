@@ -10,6 +10,9 @@
     <application>
         <uses-library android:name="android.test.runner" />
     </application>
+
+    <uses-sdk android:minSdkVersion="3"/>
+
     <!--
     This declares that this application uses the instrumentation test runner targeting
     the package of com.jayway.maven.plugins.android.generation2.samples.libraryprojects.mainapp.  To run the tests use the command:

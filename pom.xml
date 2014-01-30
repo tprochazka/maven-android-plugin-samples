@@ -37,7 +37,6 @@
       <url>LICENSE.txt</url>
     </license>
   </licenses>
-
   <developers>
     <developer>
       <name>See homepage and mailinglist for contributors.</name>
@@ -150,5 +149,4 @@
       </plugin>
     </plugins>
   </build>
-
 </project>
