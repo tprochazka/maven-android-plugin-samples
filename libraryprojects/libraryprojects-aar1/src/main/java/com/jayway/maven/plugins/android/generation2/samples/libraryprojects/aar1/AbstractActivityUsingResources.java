@@ -14,7 +14,7 @@ public class AbstractActivityUsingResources extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final String lib1Resource = getResources().getString(R.string.aar1resource);
-        Log.d(TAG, "Found resource : " + lib1Resource);
+        final String aar1Resource = getResources().getString(R.string.aar1resource);
+        Log.d(TAG, "Found resource : " + aar1Resource);
     }
 }
