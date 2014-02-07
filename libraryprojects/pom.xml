@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
@@ -12,11 +13,11 @@
   <modules>
     <module>libraryprojects-aar1</module>
     <module>libraryprojects-apklib1</module>
-    <module>libraryprojects-apklib2</module>
-    <module>libraryprojects-mainapp</module>
-    <module>libraryprojects-tests</module>
+    <module>libraryprojects-apklib-from-apklib</module>
+    <module>libraryprojects-aar-from-aar</module>
+    <module>libraryprojects-apk-with-deps</module>
+    <!--module>libraryprojects-tests</module-->
     <module>libraryprojects-aar-actionbarsherlock-example</module>
-    <!-- <module>libraryprojects-aar-from-apklib</module>  -->
   </modules>
 
   <properties>
