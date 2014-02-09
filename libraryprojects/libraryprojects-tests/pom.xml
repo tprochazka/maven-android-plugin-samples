@@ -24,13 +24,11 @@
       <artifactId>android-test</artifactId>
       <scope>provided</scope>
     </dependency>
-
     <dependency>
       <groupId>com.jayway.android.robotium</groupId>
       <artifactId>robotium-solo</artifactId>
       <version>5.0.1</version>
     </dependency>
-
     <dependency>
       <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
       <artifactId>libraryprojects-mainapp</artifactId>
@@ -38,13 +36,27 @@
       <type>apk</type>
       <scope>provided</scope>
     </dependency>
-
+    <!--  Manfred Moser: ideally the dependencies below should NOT be needed here but rather be 
+     loaded as transitive dependencies from the apk that is being tested
+     currently this allows the project to compile, does not fully run yet though -->
     <dependency>
       <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
       <artifactId>libraryprojects-mainapp</artifactId>
       <version>1.0.0-SNAPSHOT</version>
       <type>jar</type>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
+      <artifactId>libraryprojects-aar-from-aar</artifactId>
+      <version>${project.version}</version>
+      <type>aar</type>
+    </dependency>
+    <dependency>
+      <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
+      <artifactId>libraryprojects-apklib-from-apklib</artifactId>
+      <version>${project.version}</version>
+      <type>apklib</type>
     </dependency>
   </dependencies>
 
