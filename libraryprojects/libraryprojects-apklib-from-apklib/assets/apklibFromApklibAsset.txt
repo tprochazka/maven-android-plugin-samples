@@ -1,1 +1,1 @@
-This is from an asset in aar-from-apklib.
+This is from an asset in apk-from-apklib.
