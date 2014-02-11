@@ -16,7 +16,7 @@
     <module>libraryprojects-apklib-from-apklib</module>
     <module>libraryprojects-aar-from-aar</module>
     <module>libraryprojects-apk-with-deps</module>
-<!--     <module>libraryprojects-tests</module> -->
+    <module>libraryprojects-tests</module>
     <module>libraryprojects-aar-actionbarsherlock-example</module>
   </modules>
 
@@ -55,7 +55,6 @@
             <sdk>
               <platform>16</platform>
             </sdk>
-            <undeployBeforeDeploy>true</undeployBeforeDeploy>
           </configuration>
         </plugin>
       </plugins>

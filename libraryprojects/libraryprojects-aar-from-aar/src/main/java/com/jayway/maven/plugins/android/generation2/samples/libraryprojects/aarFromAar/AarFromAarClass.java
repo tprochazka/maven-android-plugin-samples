@@ -7,7 +7,7 @@ import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1
  */
 public class AarFromAarClass extends Aar1Class {
 
-    public String getString2() {
-        return "String2";
+    public static String getAarFromAarString() {
+        return "libraryprojects-aar-from-aar Java class";
     }
 }
