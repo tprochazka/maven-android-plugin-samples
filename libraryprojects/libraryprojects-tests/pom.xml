@@ -31,8 +31,8 @@
     </dependency>
     <dependency>
       <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
-      <artifactId>libraryprojects-mainapp</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <artifactId>libraryprojects-apk-with-deps</artifactId>
+      <version>${project.version}</version>
       <type>apk</type>
       <scope>provided</scope>
     </dependency>
@@ -41,8 +41,8 @@
      currently this allows the project to compile, does not fully run yet though -->
     <dependency>
       <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
-      <artifactId>libraryprojects-mainapp</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
+      <artifactId>libraryprojects-apk-with-deps</artifactId>
+      <version>${project.version}</version>
       <type>jar</type>
       <scope>provided</scope>
     </dependency>

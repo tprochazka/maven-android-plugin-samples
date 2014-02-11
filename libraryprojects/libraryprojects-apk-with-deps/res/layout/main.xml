@@ -4,8 +4,13 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-
     <!-- Android Resources -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Resources:"
+        android:textStyle="bold"
+        />
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -32,7 +37,12 @@
         android:text="@string/apklibFromApklibResource"
         />
 
-    <!-- Android Assets -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Assets:"
+        android:textStyle="bold"
+        />
     <TextView
         android:id="@+id/apkAsset"
         android:layout_width="fill_parent"
@@ -60,6 +70,12 @@
         />
 
     <!-- Java classes -->
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Java Classes:"
+        android:textStyle="bold"
+        />
     <TextView
         android:id="@+id/apkJavaclass"
         android:layout_width="fill_parent"
@@ -87,6 +103,12 @@
         />
 
     <!-- Java Resources -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Java Resources:"
+        android:textStyle="bold"
+        />
     <TextView
         android:id="@+id/apkJavaResource"
         android:layout_width="fill_parent"

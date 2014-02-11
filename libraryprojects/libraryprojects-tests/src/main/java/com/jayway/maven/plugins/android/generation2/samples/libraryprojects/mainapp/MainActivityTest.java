@@ -28,32 +28,37 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         assertTrue(robotium.waitForActivity("MainActivity", 20000));
     }
 
-    public void testMainActivityTextAppears() {
-        assertTrue(robotium.searchText("Hello World, MainActivity"));
+
+    public void testAndroidResourcesAppear() {
+        assertTrue(robotium.searchText("libraryprojects-apk-with-deps Android resource"));
+        assertTrue(robotium.searchText("libraryprojects-aar1 Android resource"));
+        assertTrue(robotium.searchText("libraryprojects-apklib1 Android resource"));
+        assertTrue(robotium.searchText("libraryprojects-aar-from-aar Android resource"));
+        assertTrue(robotium.searchText("libraryprojects-apklib-from-apklib Android resource"));
     }
 
-    public void testResourcesAppear() {
-        assertTrue(robotium.searchText("This is from a resource in aar-lib1."));
-        assertTrue(robotium.searchText("This is from a resource in libraryprojects-lib1."));
-        assertTrue(robotium.searchText("This is from a resource in libraryprojects-lib2."));
+    public void testAndroidAssetsAppear() {
+        assertTrue(robotium.searchText("libraryprojects-apk-with-deps Android asset"));
+        assertTrue(robotium.searchText("libraryprojects-aar1 Android asset"));
+        assertTrue(robotium.searchText("libraryprojects-apklib1 Android asset"));
+        assertTrue(robotium.searchText("libraryprojects-aar-from-aar Android asset"));
+        assertTrue(robotium.searchText("libraryprojects-apklib-from-apklib Android asset"));
     }
 
-    public void testAssetsAppear() {
-        assertTrue(robotium.searchText("This is from an asset in aar-lib1."));
-        assertTrue(robotium.searchText("This is from an asset in libraryprojects-lib1."));
-        assertTrue(robotium.searchText("This is from an asset in libraryprojects-lib2."));
+    public void testJavaClassesAppear() {
+        assertTrue(robotium.searchText("libraryprojects-apk-with-deps Java class"));
+        assertTrue(robotium.searchText("libraryprojects-aar1 Java class"));
+        assertTrue(robotium.searchText("libraryprojects-apklib1 Java class"));
+        assertTrue(robotium.searchText("libraryprojects-aar-from-aar Java class"));
+        assertTrue(robotium.searchText("libraryprojects-apklib-from-apklib Java class"));
     }
-
-    public void testClassesAppear() {
-        assertTrue(robotium.searchText("This is from a class in aar-lib1."));
-        assertTrue(robotium.searchText("This is from a class in libraryprojects-lib1."));
-        assertTrue(robotium.searchText("This is from a class in libraryprojects-lib2."));
-    }
-
+    
     public void testJavaResourcesAppear() {
-        assertTrue(robotium.searchText("This is from a java resource in aar-lib1."));
-        assertTrue(robotium.searchText("This is from a java resource in libraryprojects-lib1."));
-        assertTrue(robotium.searchText("This is from a java resource in libraryprojects-lib2."));
+        assertTrue(robotium.searchText("libraryprojects-apk-with-deps Java resource"));
+        assertTrue(robotium.searchText("libraryprojects-aar1 Java resource"));
+        assertTrue(robotium.searchText("libraryprojects-apklib1 Java resource"));
+        assertTrue(robotium.searchText("libraryprojects-aar-from-aar Java resource"));
+        assertTrue(robotium.searchText("libraryprojects-apklib-from-apklib Java resource"));
     }
 
     /**

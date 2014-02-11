@@ -27,11 +27,11 @@ public class MainActivity extends AbstractActivityUsingResources {
         setTextFromAsset(R.id.aarFromAarAsset, "aarFromAarAsset.txt");
         setTextFromAsset(R.id.apklibFromApklibAsset, "apklibFromApklibAsset.txt");
 
-        setTextFromClass(R.id.apkJavaclass, ApkClass.getString());
-        setTextFromClass(R.id.aar1Javaclass, Aar1Class.getString());
-        setTextFromClass(R.id.lib1Javaclass, Lib1Class.getString());
-        setTextFromClass(R.id.aarFromAarJavaclass, AarFromAarClass.getString());
-        setTextFromClass(R.id.apklibFromApklibJavaclass, ApklibFromApklibClass.getString());
+        setTextFromClass(R.id.apkJavaclass, ApkClass.getApkWithDepsString());
+        setTextFromClass(R.id.aar1Javaclass, Aar1Class.getAar1String());
+        setTextFromClass(R.id.lib1Javaclass, Lib1Class.getApklib1String());
+        setTextFromClass(R.id.aarFromAarJavaclass, AarFromAarClass.getAarFromAarString());
+        setTextFromClass(R.id.apklibFromApklibJavaclass, ApklibFromApklibClass.getApklibFromApklibString());
 
         setTextFromResource(R.id.apkJavaResource, "/apkJavaResource.txt");
         setTextFromResource(R.id.aar1JavaResource, "/aar1JavaResource.txt");

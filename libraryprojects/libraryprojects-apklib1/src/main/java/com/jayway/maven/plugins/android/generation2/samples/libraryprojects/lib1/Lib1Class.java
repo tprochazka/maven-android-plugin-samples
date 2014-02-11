@@ -6,7 +6,7 @@ package com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib
  * @author hugo.josefson@jayway.com
  */
 public class Lib1Class {
-    public static String getString() {
-        return "This is from a class in libraryprojects-lib1.";
+    public static String getApklib1String() {
+        return "libraryprojects-apklib1 Java class";
     }
 }

@@ -1,1 +1,1 @@
-This is from a java resource in libraryprojects-lib1.
+libraryprojects-apklib1 Java resource

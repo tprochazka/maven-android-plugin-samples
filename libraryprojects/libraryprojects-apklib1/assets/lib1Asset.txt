@@ -1,1 +1,1 @@
-This is from an asset in libraryprojects-lib1.
+libraryprojects-apklib1 Android asset

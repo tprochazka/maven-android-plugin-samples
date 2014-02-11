@@ -7,7 +7,7 @@ import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib1
  */
 public class ApklibFromApklibClass extends Lib1Class {
 
-    public String getString2() {
-        return "String2";
+    public static String getApklibFromApklibString() {
+        return "libraryprojects-apklib-from-apklib Java class";
     }
 }
