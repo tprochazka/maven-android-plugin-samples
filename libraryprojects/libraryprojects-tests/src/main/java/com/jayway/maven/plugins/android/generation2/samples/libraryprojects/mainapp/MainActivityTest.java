@@ -8,7 +8,7 @@ import com.robotium.solo.Solo;
  *
  * @author hugo.josefson@jayway.com
  */
-public class MainActivityTest extends ActivityInstrumentationTestCase2 {
+public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
     private Solo robotium;
 
