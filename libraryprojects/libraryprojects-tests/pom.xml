@@ -46,18 +46,6 @@
       <type>jar</type>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
-      <artifactId>libraryprojects-aar-from-aar</artifactId>
-      <version>${project.version}</version>
-      <type>aar</type>
-    </dependency>
-    <dependency>
-      <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
-      <artifactId>libraryprojects-apklib-from-apklib</artifactId>
-      <version>${project.version}</version>
-      <type>apklib</type>
-    </dependency>
   </dependencies>
 
   <build>
