@@ -6,7 +6,7 @@ import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aar1.AbstractActivityUsingResources;
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.aarFromAar.AarFromAarClass;
 import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.apklibFromApklib.ApklibFromApklibClass;
-import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib1.Lib1Class;
+import com.jayway.maven.plugins.android.generation2.samples.libraryprojects.apklib1.Lib1Class;
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
