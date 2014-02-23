@@ -46,6 +46,11 @@
             <!-- platform as api level (api level 16 = platform 4.1)-->
             <platform>16</platform>
           </sdk>
+
+           <proguard>
+              <skip>false</skip>
+              <config>proguard.cfg</config>
+           </proguard>
         </configuration>
       </plugin>
     </plugins>
