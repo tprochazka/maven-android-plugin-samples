@@ -1,4 +1,4 @@
-package com.jayway.maven.plugins.android.generation2.samples.libraryprojects.lib1;
+package com.jayway.maven.plugins.android.generation2.samples.libraryprojects.apklib1;
 
 /**
  * Class from libraryprojects-lib1.
