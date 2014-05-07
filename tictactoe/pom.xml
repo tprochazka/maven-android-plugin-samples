@@ -45,7 +45,7 @@
           <version>3.9.0-SNAPSHOT</version>
           <configuration>
             <sdk>
-              <platform>16</platform>
+              <platform>19</platform>
             </sdk>
             <emulator>
               <avd>23</avd>
