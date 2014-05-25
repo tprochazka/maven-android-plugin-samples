@@ -36,6 +36,7 @@
       <artifactId>libraryprojects-apk-with-deps</artifactId>
       <version>${project.version}</version>
       <type>apk</type>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
