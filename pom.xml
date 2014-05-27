@@ -83,20 +83,20 @@
     <scm.branch>master</scm.branch>
     <maven.version>3.1.1</maven.version>
   </properties>
-  <pluginManagement>
-    <!-- this is only here to allow command line invocations like mvn android:undeploy in the top level
-    of the multi module build without specifying the version of the android-maven-plugin, each module is otherwise 
-    designed to be standalone -->
-    <plugins>
-      <plugin>
-        <groupId>com.jayway.maven.plugins.android.generation2</groupId>
-        <artifactId>android-maven-plugin</artifactId>
-        <version>3.9.0-SNAPSHOT</version>
-        <extensions>true</extensions>
-      </plugin>
-    </plugins>
-  </pluginManagement>
   <build>
+    <pluginManagement>
+      <!-- this is only here to allow command line invocations like mvn android:undeploy 
+        in the top level of the multi module build without specifying the version 
+        of the android-maven-plugin, each module is otherwise designed to be standalone -->
+      <plugins>
+        <plugin>
+          <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+          <artifactId>android-maven-plugin</artifactId>
+          <version>3.9.0-SNAPSHOT</version>
+          <extensions>true</extensions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
     <plugins>
       <plugin>
         <artifactId>maven-scm-plugin</artifactId>
