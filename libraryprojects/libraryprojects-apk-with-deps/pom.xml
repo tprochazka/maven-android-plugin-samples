@@ -34,6 +34,13 @@
     </dependency>
 
     <dependency>
+        <groupId>eu.inmite.android.lib</groupId>
+        <artifactId>android-styled-dialogs</artifactId>
+        <version>1.1.2</version>
+        <type>apklib</type>
+    </dependency>
+
+    <dependency>
       <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
       <artifactId>libraryprojects-apklib-from-apklib</artifactId>
       <version>${project.version}</version>

@@ -18,11 +18,25 @@
 
   <dependencies>
     <dependency>
+        <groupId>com.google.android</groupId>
+        <artifactId>android</artifactId>
+        <scope>provided</scope>
+    </dependency>
+
+    <dependency>
       <groupId>com.jayway.maven.plugins.android.generation2.samples.libraryprojects</groupId>
       <artifactId>libraryprojects-apklib1</artifactId>
       <version>${project.version}</version>
       <type>apklib</type>
     </dependency>
+
+    <dependency>
+        <groupId>eu.inmite.android.lib</groupId>
+        <artifactId>android-styled-dialogs</artifactId>
+        <version>1.1.2</version>
+        <type>apklib</type>
+    </dependency>
+
   </dependencies>
 
   <build>

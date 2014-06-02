@@ -10,4 +10,8 @@ public class ApklibFromApklibClass extends Lib1Class {
     public static String getApklibFromApklibString() {
         return "libraryprojects-apklib-from-apklib Java class";
     }
+
+    public void test() {
+        int a = R.style.DialogStyleLight;
+    }
 }
